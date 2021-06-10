@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 let store = new Vuex.Store({
   state: { // data in component
-    count : 0
+    count : 1
   },
   getters : { // compueted in component
     getCountValue(state, getters){

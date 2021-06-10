@@ -1,17 +1,9 @@
 <template>
   <div id="app">
-      <!-- <Gitar /> -->
-      <div>
-        <div>count: {{count}}</div>
-        <div>getter: {{getCountValue}}</div>
-        <button @click="incrementBy2">incrementBy2</button>
-        <button @click="decrementBy2">decrementBy2</button>
-      </div>
-      <Banner />
+      <router-view></router-view>
   </div>
 </template>
 <script>
-import Banner from './components/Banner.vue';
 import {mapActions, mapGetters, mapMutations, mapState} from 'vuex';
 // import Gitar from '@/components/Gitar.vue';
 export default {
@@ -45,10 +37,6 @@ export default {
     //   // this.$store.commit('decrementBy2');
     // }
   },
-  components: {
-    Banner
-    // Gitar
-  }
 }
 </script>
 <style lang="less">

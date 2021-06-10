@@ -1,18 +1,25 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <h1>Home page</h1>
+      <button @click="routeToAboutPage">About Page</button>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
+
+import Banner from "../components/Banner";
 export default {
   name: 'home',
-  components: {
-    HelloWorld
-  }
+    components: {Banner},
+    methods : {
+      routeToAboutPage()
+      {
+          this.$router.push({name : "aboutowner",params : {owner : "andrew",id : "77989348"}}).catch(()=>{
+              this.$router.push({name : "profileview"})
+          });
+      }
+    }
 }
 </script>
