@@ -15,5 +15,4 @@ npm run dev
 npm run prod
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Implementing and experimentation of vue,vuex,vue-router
